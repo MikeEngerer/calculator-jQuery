@@ -1,0 +1,32 @@
+html {
+
+}
+
+.calc{
+	text-align: center;
+}
+
+.calc-header input {
+	width: 300px;
+	font-size: 2.5em;
+	text-align: right;
+}
+
+button {
+	border-radius: 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	width: 50px;
+	height: 50px;
+}
+
+.calc-btn-num {
+	background-color: forestgreen;
+	border: none;
+}
+
+.calc-btn-num:hover {
+	color: orange;
+	border-color: orange;
+	border: solid 1px orange;
+}
