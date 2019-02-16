@@ -2,13 +2,13 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:100" rel="stylesheet">
 	<script type="text/javascript" src="../vendor/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="../scripts/index.js"></script>
 	<title>Calculator</title>
 </head>
 <body>
 	<div class="calc">
-		
 		<div class="calc-header">
 			<input id="result" type="text"  readonly>
 		</div>
@@ -24,19 +24,22 @@
 				<button class="calc-btn-num">2</button>
 				<button class="calc-btn-num">1</button>
 				<button class="calc-btn-num">0</button>
+				<button id="decimal">.</button>
+				<button id="calc-btn-clear">AC</button>
 			</div>
 			<div class='calc-body-op'>
 				<button id="add" class="calc-btn-op">+</button>
 				<button id="subtract" class="calc-btn-op">-</button>
 				<button id="multiply"class="calc-btn-op">*</button>
 				<button id="divide" class="calc-btn-op">/</button>
-				<button id="decimal">.</button>
-			</div>
-			<div class="calc-body-eval">
-				<button id="calc-btn-eval">=</button>
-				<button id="calc-btn-clear">C</button>
 			</div>
 		</div>
+		<div class="calc-body-eval">
+			<button id="calc-btn-eval">=</button>
+		</div>
+	</div>
+	<div id="trivia-container">
+		<p id="trivia"></p>
 	</div>
 </body>
 </html>

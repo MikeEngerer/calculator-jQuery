@@ -1,32 +1,97 @@
 html {
-
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
 }
 
-.calc{
-	text-align: center;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
-.calc-header input {
-	width: 300px;
-	font-size: 2.5em;
-	text-align: right;
+.calc {
+	border-radius: 10px;
+	background-color: #a2bbcf;
+	border: solid 1px #142f44;
+	margin: 10px 40%;
+	padding: 20px 0 20px 0;
+	font-size: 40px;
 }
 
 button {
-	border-radius: 10px;
-	border-radius: 10px;
-	font-size: 15px;
-	width: 50px;
+	color: white;
+	font-size: 20px;
+	border: none;
+	border-radius: 3px;
+	width: 70px;
+	height: 70px;
+	margin: 2px;
+}
+
+button:hover {
+	color: orange;
+	border: 1px solid orange;
+}
+
+.calc-header {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 15px;
+}
+
+#result {
+	overflow-wrap: all;
+	height: 80px;
+	font-size: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: right;
+	width: 292px;
+
+}
+
+#calc-btn-eval {
+	width: 292px;
 	height: 50px;
 }
 
-.calc-btn-num {
-	background-color: forestgreen;
-	border: none;
+.calc-body-eval {
+	text-align: center;
 }
 
-.calc-btn-num:hover {
-	color: orange;
-	border-color: orange;
-	border: solid 1px orange;
+.calc-body {
+	display: flex;
+	justify-content: center;
+}
+
+.calc-body-nums {
+	width: 222px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.calc-btn-num {
+	background-color: #142f44;
+}
+
+.calc-btn-op, #calc-btn-clear, #decimal {
+	background-color: #205b7a;
+}
+
+#calc-btn-eval {
+	background-color: mediumseagreen;
+	margin-bottom: 15px;
+}
+
+.calc-body-op {
+	display: flex;
+	flex-direction: column;
+}
+
+#trivia-container {
+	padding-top: 20px;
+	text-align: center;
+	font-size: 30px;
+	color: #142f44;
 }

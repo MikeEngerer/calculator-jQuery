@@ -26,6 +26,9 @@ const divide = (numOne, numTwo) => {
 
 const appendVal = () => {
 	$('.calc-btn-num').click((e) => {
+		if (data.result) {
+			clearAll()
+		}
 		let num = e.target.innerText;
 		$('#result')[0].value += num;
 		data[data.currentNum] += num;
@@ -83,7 +86,7 @@ const evaluate = () => {
 		}
 
 		outputResult(data.result);
-		fetchTrivia(data.result);
+		fetchTrivia(data.result)
 		clearData();
 	})
 }
@@ -92,7 +95,7 @@ const fetchTrivia = (result) => {
 	$.ajax({
 		url: `http://numbersapi.com/${Math.floor(result)}`
 	}).done((res) => {
-		console.log(res)
+		$('#trivia').text(res)
 	});
 }
 
@@ -110,8 +113,15 @@ const clearData = () => {
 	data.currentOp = null;
 }
 
+const clearAll = () => {
+	clearResult();
+	clearData();
+	clearOutput();
+}
+
 const clearResult = () => {
 	$('#result')[0].value = '';
+	data.result = null;
 }
 
 $(document).ready(function() {
