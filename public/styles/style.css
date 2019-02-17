@@ -10,6 +10,10 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+	list-style-type: none;
+}
+
 .all {
 	margin-top: 20px; 
 	margin-left: 400px;	
