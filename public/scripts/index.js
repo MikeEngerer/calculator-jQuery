@@ -14,22 +14,13 @@ const opConversion = {
 	divide: '/'
 }
 
-const add = (numOne, numTwo) => {
-	return (numOne + numTwo);
-}
+const add = (numOne, numTwo) => numOne + numTwo
 
-const subtract = (numOne, numTwo) => {
-	return (numOne - numTwo);
-}
+const subtract = (numOne, numTwo) => numOne - numTwo
 
-const multiply = (numOne, numTwo) => {
-	return (numOne * numTwo);
-}
+const multiply = (numOne, numTwo) => numOne * numTwo
 
-const divide = (numOne, numTwo) => {
-	return (numOne / numTwo);
-}
-
+const divide = (numOne, numTwo) => numOne / numTwo
 
 const appendVal = () => {
 	$('.calc-btn-num').click((e) => {
