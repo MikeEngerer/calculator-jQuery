@@ -10,7 +10,7 @@ Fetches trivia from [numbers api](http://www.numbersapi.com) and displays on eva
 
 This is a follow up to my [first calculator](https://github.com/MikeEngerer/calculator), this time utilizing jQuery. 
 
-### How to run:
+### Usage:
 
 1. ```git clone <repo name>``` 
 2. ```xdg-open public/views/index.html```
