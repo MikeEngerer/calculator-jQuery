@@ -1,7 +1,7 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
 *, *::before, *::after {
@@ -10,14 +10,35 @@ html {
   box-sizing: inherit;
 }
 
+.all {
+	margin-top: 20px; 
+	margin-left: 400px;	
+	margin-right: 500px;	
+	display: flex;
+	justify-content: space-around;
+
+}
+
 .calc {
+/*	position: fixed;
+	text-align: center;*/
 	border-radius: 10px;
 	background-color: #a2bbcf;
 	border: solid 1px #142f44;
-	margin: 10px 40%;
-	padding: 20px 0 20px 0;
+	padding: 0 20px 0 20px;
 	font-size: 40px;
 }
+
+.all #mem {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	margin-top: 70px;
+	margin-right: 70px;
+	padding: 0;
+	color: #142f44;
+}
+
 
 button {
 	color: white;
@@ -30,8 +51,8 @@ button {
 }
 
 button:hover {
-	color: orange;
-	border: 1px solid orange;
+	color: green;
+	border: 1px solid green;
 }
 
 .calc-header {
@@ -48,7 +69,6 @@ button:hover {
 	padding-right: 20px;
 	text-align: right;
 	width: 292px;
-
 }
 
 #calc-btn-eval {
@@ -80,7 +100,7 @@ button:hover {
 }
 
 #calc-btn-eval {
-	background-color: mediumseagreen;
+	background-color: #205b7a;
 	margin-bottom: 15px;
 }
 
@@ -89,9 +109,13 @@ button:hover {
 	flex-direction: column;
 }
 
+#mem-container {
+	font-size: 20px;
+}
+
 #trivia-container {
-	padding-top: 20px;
+	margin-top: 20px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 20px;
 	color: #142f44;
 }

@@ -4,7 +4,7 @@ Basic utility for evaluating expressions using +, -, \*, / operators.
 
 Fetches trivia from [numbers api](http://www.numbersapi.com) and displays on eval. 
 
-![calc screenshot](/public/img/screenshot.png?raw=true)
+![calc screenshot](/public/img/calc.png?raw=true)
 
 ### Why make this?
 

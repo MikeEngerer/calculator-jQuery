@@ -7,6 +7,13 @@ const data = {
 	result: null
 };
 
+const opConversion = {
+	add: '+',
+	subtract: '-',
+	multiply: '*',
+	divide: '/'
+}
+
 const add = (numOne, numTwo) => {
 	return (numOne + numTwo);
 }
@@ -84,7 +91,7 @@ const evaluate = () => {
 				data.result = divide(numOne, numTwo);
 				break;
 		}
-
+		appendMem(`${numOne} ${opConversion[data.currentOp]} ${numTwo} = ${data.result}</li>`)
 		outputResult(data.result);
 		fetchTrivia(data.result)
 		clearData();
@@ -124,10 +131,14 @@ const clearResult = () => {
 	data.result = null;
 }
 
+const appendMem = (item) => {
+	$('#mem-container ul').append(`<li>${item}</li>`)
+} 
+
 $(document).ready(function() {
 	appendVal();
 	applyOp();
 	evaluate();
 	appendDecimal();
 	clearOutput();
-});
+})
